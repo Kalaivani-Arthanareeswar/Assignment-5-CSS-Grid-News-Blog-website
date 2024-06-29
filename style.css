@@ -6,46 +6,53 @@
 }
 body
 {
-    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%); 
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color:rgb(243, 225, 243);  
 }
 
 /* header part*/
 
 header
 {
-    position: sticky;top: 0;
+    position: sticky;
+    top: 0;  
+
 }
 nav
 {
-    background-color: #FD6569;
-    border-radius:5px;
+    margin-bottom: 20px;
+    
 }
-nav h1
+.bar
+{
+    background-image: url(navbar.png);
+    background-repeat: no-repeat;background-position: center;background-size: cover;
+}
+nav .bar h1
 {
   padding:10px;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style:normal;
-  color:#DDD6F3;
+  color:teal;
   letter-spacing: 1px;
 }
-nav span
+nav .bar span
 {
-    color:teal;
+    color:#ff6569;
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style:italic;
     font-size: 50px;
-    letter-spacing: 1px;
+    letter-spacing:1px;
 }
 .menu ul
 {
 display: flex;align-items: center;justify-content: space-between;
-list-style-type: none;
-margin:40px 15px 40px 15px;
+list-style-type: none;font-weight: 600;
+margin:25px 15px 25px 15px;
 }
 .menu a
 {
@@ -66,19 +73,18 @@ margin:40px 15px 40px 15px;
 {
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    margin-left:15px;margin-right: 15px;
-    gap: 10px;
-    
+    margin-left:50px;margin-right: 50px;
+    gap: 10px; 
 }
 .parent-div>div
 {
     height:350px;
-    border-radius:10px;
+    border-radius:15px;
    
 }
 .parent-div>div:hover
 {
-    opacity:0.8;
+    opacity:0.85;
     transform: scale(0.99);
 }
 .parent-div>div p
@@ -93,7 +99,7 @@ margin:40px 15px 40px 15px;
 }
 .parent-div>div p:hover
 {
-    opacity: 1;transition: 0.35s ease-in-out;
+    opacity: 1;transition: 0.2s ease-in-out;
 }
 .parent-div>div a
 {
@@ -201,8 +207,8 @@ button
     margin:30px 30px 30px 1100px;
     padding: 5px;
     font-size: 20px;font-family: 'poppins';
-    font-weight: 600;border-radius: 10px;color:seagreen;
-    border: none;background-color: thistle;
+    font-weight: 700;border-radius: 10px;color:seagreen;
+    border: none;background-color: thistle;cursor: pointer;
 }
 .footer
 {
